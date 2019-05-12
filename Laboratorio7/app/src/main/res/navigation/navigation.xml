@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation" app:startDestination="@id/fList">
+
+    <fragment android:id="@+id/fList"
+              android:name="com.example.lab5.fList"
+              android:label="fragmentoLista"
+              tools:layout="@layout/lista_fragment"/>
+    <fragment android:id="@+id/newone"
+              android:name="com.example.lab5.new"
+              android:label="newone"
+              tools:layout="@layout/nuevo_fragment">
+        <action android:id="@+id/action_newone_to_fList" app:destination="@id/fList"/>
+    </fragment>
+</navigation>
